@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KyberSim™ - Küberturvalisuse Simulaator | Revolutsiooniline Õppetarkvara</title>
+
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Revolutsiooniline JavaFX-põhine küberturvalisuse simulaator. 12 kategooriat, 50+ stsenaariumit. Tasuta allalaadimine.">
+    <meta property="og:title" content="KyberSim™ - Küberturvalisuse Simulaator">
+    <meta property="og:description" content="Maailma esimene JavaFX-põhine simulaator, mis muudab sinu elu 127% turvalisemaks">
+    <meta property="og:image" content="/assets/images/og-image.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="nav-brand">
+                <img src="/assets/images/logos/logo.svg" alt="KyberSim™ Logo">
+                <span>KyberSim™</span>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="/features.html" class="nav-link">Funktsioonid</a>
+                <a href="/screenshots.html" class="nav-link">Galerii</a>
+                <a href="/about.html" class="nav-link">Meeskond</a>
+                <a href="/download.html" class="nav-link">Laadi alla</a>
+            </div>
+            <a href="/download.html" class="nav-cta">Alusta kohe</a>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title fade-in">REVOLUTSIOONILINE KÜBERTURVALISUS</h1>
+                <p class="hero-subtitle fade-in">nüüd kõigile kättesaadav</p>
+
+                <p class="hero-description slide-up">
+                    Maailma esimene JavaFX-põhine simulaator,<br>
+                    mis muudab sinu elu <span id="satisfaction-rate">127</span>%* turvalisemaks
+                </p>
+
+                <div class="hero-buttons slide-up">
+                    <a href="/download.html" class="btn btn-primary btn-lg">LAADI ALLA TASUTA</a>
+                    <a href="#demo" class="btn btn-secondary btn-lg">VAATA DEMOT</a>
+                </div>
+
+                <p class="hero-disclaimer slide-up">*Statistiliselt tõestamata</p>
+
+                <div class="hero-image scale-in" id="heroImageContainer">
+                    <img src="/assets/images/hero/app-screenshot.svg" alt="KyberSim Interface" id="heroImage">
+                    <p class="image-hint">🎭 Klikka pildile tegelikkuse nägemiseks!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem/Solution Section -->
+        <section class="problem-solution">
+            <div class="container">
+                <h2 class="section-title fade-in">
+                    Kas tunned end kübermaailmas nagu kalake haikalade seas? 🦈
+                </h2>
+
+                <div class="problem-grid">
+                    <div class="problem-card slide-up">
+                        <div class="problem-icon">📧</div>
+                        <p>67% inimestest klikib kahtlastele linkidele</p>
+                    </div>
+                    <div class="problem-card slide-up">
+                        <div class="problem-icon">🔑</div>
+                        <p>89% kasutab parooli "parool123"</p>
+                    </div>
+                    <div class="problem-card slide-up">
+                        <div class="problem-icon">🎣</div>
+                        <p>156% ei tea, mis on phishing</p>
+                    </div>
+                </div>
+
+                <div class="solution-box fade-in">
+                    <h3>LAHENDUS: KyberSim™</h3>
+                    <p>
+                        Meie AI-põhine* platform õpetab sind 12<br>
+                        kategoorias läbi praktiliste stsenaariumite!
+                    </p>
+                    <p class="footnote">*AI = Actually Intelligence (Kevin ja Kaili)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Showcase -->
+        <section class="features-showcase">
+            <div class="container">
+                <h2 class="section-title fade-in">Funktsioonid mis teevad meist liidri</h2>
+
+                <div class="feature-grid">
+                    <div class="feature-card slide-up">
+                        <div class="feature-icon">👥</div>
+                        <h3>Enterprise-grade Kasutajahaldus</h3>
+                        <p>Looge ja kustutage kasutajaid nagu tõeline enterprise tarkvara!</p>
+                    </div>
+
+                    <div class="feature-card slide-up">
+                        <div class="feature-icon">📊</div>
+                        <h3>Big Data Analytics</h3>
+                        <p>Teie skoor salvestatakse high-performance tekstifaili süsteemi!</p>
+                    </div>
+
+                    <div class="feature-card slide-up">
+                        <div class="feature-icon">☁️</div>
+                        <h3>Cloud-native Arhitektuur</h3>
+                        <p>Töötab täielikult offline - nagu tõeline cloud!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Social Proof -->
+        <section class="social-proof">
+            <div class="container">
+                <h2 class="section-title fade-in">
+                    <span id="user-count">2</span>+ RAHULOLU KASUTAJAT
+                </h2>
+
+                <div class="testimonial-grid">
+                    <div class="testimonial-card slide-up">
+                        <p class="testimonial-text">
+                            "Enne simulaatorit klikkisin kõikidele linkidele.
+                            Nüüd klikin ainult 73%-le neist!"
+                        </p>
+                        <p class="testimonial-author">- Anonüümne Kasutaja</p>
+                    </div>
+
+                    <div class="testimonial-card slide-up">
+                        <p class="testimonial-text">
+                            "Ma arvasin, et parool123 on turvaline.
+                            Nüüd kasutan parool124!"
+                        </p>
+                        <p class="testimonial-author">- Rahul Kasutaja</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Specifications -->
+        <section class="tech-specs">
+            <div class="container">
+                <h2 class="section-title fade-in">Tehnilised nõuded ja garantiid</h2>
+
+                <div class="specs-grid">
+                    <div class="specs-card fade-in">
+                        <h3>SÜSTEEMI NÕUDED:</h3>
+                        <ul>
+                            <li>✓ Java 24+ (see on tähtis!)</li>
+                            <li>✓ JavaFX 24 (revolutsiooniline!)</li>
+                            <li>✓ 1-5MB vaba kettaruumi (massive scale!)</li>
+                            <li>✓ Töötab Windows/Mac/Linux (cross-platform mastery!)</li>
+                        </ul>
+                    </div>
+
+                    <div class="specs-card fade-in">
+                        <h3>TURVALISUS:</h3>
+                        <ul>
+                            <li>✓ Military-grade failide laadimine/salvestamine</li>
+                            <li>✓ Enterprise-level kasutaja autentimine</li>
+                            <li>✓ Blockchain-secured JSON konfiguratsioon</li>
+                            <li>✓ End-to-end krüpteeritud... mäng</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="cta-title fade-in">VALMIS ALUSTAMA? IT'S FREE!</h2>
+                <div class="cta-buttons slide-up">
+                    <a href="/download.html" class="btn btn-primary btn-lg">LAADI ALLA GITHUB'IST</a>
+                    <a href="https://github.com/klaig/cybersecurity-simulator" class="btn btn-secondary btn-lg">VAATA KOODI</a>
+                </div>
+                <p class="cta-contact fade-in">
+                    Või saada meile kiri: kevin.kaili@kybersim.ee*<br>
+                    <span class="footnote">*see e-post ei eksisteeri</span>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 KyberSim™. Kõik õigused kaitstud.*</p>
+            <p class="footer-disclaimer">*Tegelikult pole midagi kaitstud, see on avatud lähtekoodiga projekt</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/animations.js"></script>
+    <script src="/assets/js/analytics.js"></script>
+</body>
+</html>

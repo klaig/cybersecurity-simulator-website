@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laadi Alla | KyberSim™ - Küberturvalisuse Simulaator</title>
+
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Laadi alla KyberSim™ v2.0 'CSS Warrior'. Saadaval JAR* ja lähtekood*. Enterprise-grade küberturvalisuse simulaator.">
+    <meta property="og:title" content="Laadi alla KyberSim™ v2.0">
+    <meta property="og:description" content="CSS Warrior versioon - nüüd 42% rohkem küberturvalisust!">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <style>
+        /* Download page specific styles */
+        .download-hero {
+            background: linear-gradient(135deg, var(--neutral-50) 0%, rgba(0, 168, 107, 0.1) 100%);
+            padding: var(--space-16) 0 var(--space-12);
+            text-align: center;
+        }
+
+        .version-badge {
+            display: inline-block;
+            background: var(--primary-green);
+            color: white;
+            padding: var(--space-2) var(--space-4);
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: var(--space-4);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .download-buttons {
+            display: flex;
+            gap: var(--space-6);
+            justify-content: center;
+            margin: var(--space-8) 0;
+            flex-wrap: wrap;
+        }
+
+        .download-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: white;
+            padding: var(--space-8);
+            border-radius: 1rem;
+            box-shadow: var(--shadow-lg);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            min-width: 250px;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .download-icon {
+            font-size: 4rem;
+            margin-bottom: var(--space-4);
+        }
+
+        .download-btn h3 {
+            color: var(--primary-green);
+            margin-bottom: var(--space-2);
+        }
+
+        .download-size {
+            color: var(--neutral-800);
+            font-size: var(--text-sm);
+        }
+
+        .download-stats {
+            text-align: center;
+            margin: var(--space-8) 0;
+            padding: var(--space-6);
+            background: var(--neutral-100);
+            border-radius: 1rem;
+        }
+
+        .stats-number {
+            font-size: var(--text-4xl);
+            font-weight: 700;
+            color: var(--primary-green);
+            display: block;
+        }
+
+        .instructions-section {
+            background: white;
+            padding: var(--space-16) 0;
+        }
+
+        .instruction-steps {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: var(--space-6);
+            padding: var(--space-6);
+            background: var(--neutral-50);
+            border-radius: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .step:hover {
+            background: white;
+            box-shadow: var(--shadow-md);
+        }
+
+        .step-number {
+            background: var(--primary-green);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-right: var(--space-4);
+            flex-shrink: 0;
+        }
+
+        .code-block {
+            background: var(--neutral-900);
+            color: #e5e7eb;
+            padding: var(--space-4);
+            border-radius: 0.5rem;
+            font-family: var(--font-family-mono);
+            margin: var(--space-4) 0;
+            overflow-x: auto;
+        }
+
+        .code-block code {
+            font-size: var(--text-sm);
+        }
+
+        .requirements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--space-6);
+            margin: var(--space-8) 0;
+        }
+
+        .requirement-card {
+            background: white;
+            padding: var(--space-6);
+            border-radius: 1rem;
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .requirement-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .requirement-icon {
+            font-size: 3rem;
+            margin-bottom: var(--space-4);
+        }
+
+        .faq-section {
+            background: var(--neutral-50);
+            padding: var(--space-16) 0;
+        }
+
+        .faq-item {
+            background: white;
+            padding: var(--space-6);
+            margin-bottom: var(--space-4);
+            border-radius: 1rem;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: var(--shadow-md);
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: var(--primary-green);
+            margin-bottom: var(--space-2);
+            font-size: var(--text-lg);
+        }
+
+        .faq-answer {
+            color: var(--neutral-800);
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="nav-brand">
+                <img src="/assets/images/logos/logo.svg" alt="KyberSim™ Logo">
+                <span>KyberSim™</span>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="/features.html" class="nav-link">Funktsioonid</a>
+                <a href="/screenshots.html" class="nav-link">Galerii</a>
+                <a href="/about.html" class="nav-link">Meeskond</a>
+                <a href="/download.html" class="nav-link active">Laadi alla</a>
+            </div>
+            <a href="/download.html" class="nav-cta">Alusta kohe</a>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Download Hero Section -->
+        <section class="download-hero">
+            <div class="container">
+                <span class="version-badge">v2.0 "CSS Warrior"</span>
+                <h1 class="page-title fade-in">LAADI ALLA KYBERSIM™</h1>
+                <p class="page-subtitle slide-up">
+                    Enterprise-grade küberturvalisuse simulaator
+                </p>
+                <p class="page-disclaimer slide-up">
+                    *Nüüd 42% rohkem küberturvalisust kui konkurentidel**<br>
+                    **Meil pole konkurente
+                </p>
+
+                <!-- Download Buttons -->
+                <div class="download-buttons slide-up">
+                    <a href="https://github.com/klaig/cybersecurity-simulator/releases/latest/download/KyberSim-2.0.jar" class="download-btn">
+                        <span class="download-icon">📦</span>
+                        <h3>LAADI ALLA JAR</h3>
+                        <span class="download-size">Suurus: 3.14 MB</span>
+                    </a>
+
+                    <a href="https://github.com/klaig/cybersecurity-simulator/archive/refs/heads/main.zip" class="download-btn">
+                        <span class="download-icon">📂</span>
+                        <h3>LAADI ALLA LÄHTEKOOD</h3>
+                        <span class="download-size">Suurus: 1.21 MB</span>
+                    </a>
+                </div>
+
+                <!-- Download Statistics -->
+                <div class="download-stats fade-in">
+                    <span class="stats-number" id="download-count">42,069</span>
+                    <p>allalaadimist alates eelmisest reedest*</p>
+                    <p class="footnote">*Number võib olla täielikult väljamõeldud</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Installation Instructions -->
+        <section class="instructions-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Paigaldamise juhised</h2>
+
+                <div class="instruction-steps">
+                    <div class="step slide-up">
+                        <div class="step-number">1</div>
+                        <div>
+                            <h3>Laadi alla Java 24+</h3>
+                            <p>Kui sul pole veel Java 24 installitud, siis oled ilmselt elanud koopas. Laadi alla <a href="https://openjdk.org" target="_blank">OpenJDK</a> või <a href="https://oracle.com/java" target="_blank">Oracle JDK</a>.</p>
+                        </div>
+                    </div>
+
+                    <div class="step slide-up">
+                        <div class="step-number">2</div>
+                        <div>
+                            <h3>Laadi alla KyberSim™ JAR fail</h3>
+                            <p>Kliki üleval "LAADI ALLA JAR" nuppu. Fail salvestub automaatselt sinu "Downloads" kausta, kus see hakkab koguma digitaalset tolmu.</p>
+                        </div>
+                    </div>
+
+                    <div class="step slide-up">
+                        <div class="step-number">3</div>
+                        <div>
+                            <h3>Käivita programm</h3>
+                            <p>Ava terminal või käsurida ja navigeeri allalaadimiste kausta:</p>
+                            <div class="code-block">
+                                <code>cd ~/Downloads<br>java -jar KyberSim-2.0.jar</code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step slide-up">
+                        <div class="step-number">4</div>
+                        <div>
+                            <h3>Naudi revolutsioonilist kogemust!</h3>
+                            <p>Oled nüüd valmis alustama oma teekonda küberturvalisuse maailmas. Ära unusta: parool123 pole turvaline!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="section-title fade-in" style="margin-top: var(--space-16);">Lähtekoodi kompileerimine</h2>
+
+                <div class="instruction-steps">
+                    <div class="step slide-up">
+                        <div class="step-number">1</div>
+                        <div>
+                            <h3>Klooni repositoorium</h3>
+                            <div class="code-block">
+                                <code>git clone https://github.com/klaig/KyberSimulaator.git<br>cd KyberSimulaator</code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step slide-up">
+                        <div class="step-number">2</div>
+                        <div>
+                            <h3>Installi JavaFX</h3>
+                            <p>Laadi alla JavaFX 24 <a href="https://openjfx.io" target="_blank">siit</a>. See on revolutsiooniline tehnoloogia!</p>
+                        </div>
+                    </div>
+
+                    <div class="step slide-up">
+                        <div class="step-number">3</div>
+                        <div>
+                            <h3>Käivita</h3>
+                            <div class="code-block">
+                                <code>mvnw clean javafx:run</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- System Requirements -->
+        <section class="requirements-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Süsteeminõuded</h2>
+
+                <div class="requirements-grid">
+                    <div class="requirement-card slide-up">
+                        <div class="requirement-icon">☕</div>
+                        <h3>Java 24+</h3>
+                        <p>Sest me elame tulevikus!</p>
+                    </div>
+
+                    <div class="requirement-card slide-up">
+                        <div class="requirement-icon">💾</div>
+                        <h3>1-5MB vaba ruumi</h3>
+                        <p>Big Data vajab suurt ruumi</p>
+                    </div>
+
+                    <div class="requirement-card slide-up">
+                        <div class="requirement-icon">🖥️</div>
+                        <h3>Ükskõik mis OS</h3>
+                        <p>Windows, Mac, Linux, TempleOS</p>
+                    </div>
+
+                    <div class="requirement-card slide-up">
+                        <div class="requirement-icon">🧠</div>
+                        <h3>IQ 80+</h3>
+                        <p>Soovituslik, mitte kohustuslik</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title fade-in">Korduma Kippuvad Küsimused</h2>
+
+                <div class="faq-list">
+                    <div class="faq-item slide-up">
+                        <h3 class="faq-question">K: Kas see on päriselt tasuta?</h3>
+                        <p class="faq-answer">V: Jah! Nagu õhk, päikesevalgus ja halvad nõuanded internetis. Aga kui tahad, võid meile bitcoine saata aadressil: 1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa*<br><small>*See on tegelikult suvalien aadress</small></p>
+                    </div>
+
+                    <div class="faq-item slide-up">
+                        <h3 class="faq-question">K: Miks Java 24? See on ju nii uus!</h3>
+                        <p class="faq-answer">V: Me oleme nii innovatiivsed, et kasutame tuleviku tehnoloogiaid. Tegelikult töötab ka Java 21-ga, aga see kõlab vähem muljetavaldavalt.</p>
+                    </div>
+
+                    <div class="faq-item slide-up">
+                        <h3 class="faq-question">K: Kas ma saan sellega päriselt häkkeriks?</h3>
+                        <p class="faq-answer">V: Ei, aga sa saad aru, miks "password123" pole hea parool. See on juba pool võitu!</p>
+                    </div>
+
+                    <div class="faq-item slide-up">
+                        <h3 class="faq-question">K: Miks allalaadimiste arv muutub iga kord kui lehte värskenda?</h3>
+                        <p class="faq-answer">V: See on kvantmehaanika. Iga kord kui sa vaatad, muutub tulemus. Schrödingeri allalaadimine!</p>
+                    </div>
+
+                    <div class="faq-item slide-up">
+                        <h3 class="faq-question">K: Kas see töötab minu 1995. aasta Windows 95 peal?</h3>
+                        <p class="faq-answer">V: Teoreetiliselt võib kõik olla võimalik. Praktiliselt... soovitame uuendada.</p>
+                    </div>
+
+                    <div class="faq-item slide-up">
+                        <h3 class="faq-question">K: Kas ma saan tagasisidet kui teen midagi valesti?</h3>
+                        <p class="faq-answer">V: Jah! Meie kasutajasõbralik liides annab sulle kohe teada punase teksti ja vihaste ikoonidega.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="cta-title fade-in">Millega sa ootad?</h2>
+                <p class="cta-contact fade-in">
+                    Iga sekund ilma KyberSim™-ita on potentsiaalne turvarisk!<br>
+                    <span class="footnote">*See väide pole kinnitatud ühegi turvaeksperdi poolt</span>
+                </p>
+                <div class="cta-buttons slide-up">
+                    <a href="#download-buttons" class="btn btn-primary btn-lg">LAADI KOHE ALLA</a>
+                    <a href="https://github.com/klaig/cybersecurity-simulator" class="btn btn-secondary btn-lg">VAATA GITHUBIS</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 KyberSim™. Kõik õigused kaitstud.*</p>
+            <p class="footer-disclaimer">*Tegelikult pole midagi kaitstud, see on avatud lähtekoodiga projekt</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/animations.js"></script>
+    <script>
+        // Animated download counter
+        let downloadCount = 42069;
+        const counterElement = document.getElementById('download-count');
+
+        function updateCounter() {
+            downloadCount += Math.floor(Math.random() * 5) + 1;
+            counterElement.textContent = downloadCount.toLocaleString('et-EE');
+        }
+
+        // Update counter every 3 seconds
+        setInterval(updateCounter, 3000);
+
+        // Smooth scroll to download buttons
+        document.querySelector('a[href="#download-buttons"]').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('.download-buttons').scrollIntoView({
+                behavior: 'smooth',
+                block: 'center'
+            });
+        });
+    </script>
+</body>
+</html>

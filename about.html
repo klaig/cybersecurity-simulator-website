@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meist - Kübersimulator</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/components.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="nav-brand">
+                <img src="/assets/images/logos/logo.svg" alt="KyberSim™ Logo">
+                <span>KyberSim™</span>
+            </a>
+            <div class="nav-menu" id="navMenu">
+                <a href="/features.html" class="nav-link">Funktsioonid</a>
+                <a href="/screenshots.html" class="nav-link">Galerii</a>
+                <a href="/about.html" class="nav-link active">Meeskond</a>
+                <a href="/download.html" class="nav-link">Laadi alla</a>
+            </div>
+            <a href="/download.html" class="nav-cta">Alusta kohe</a>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="container">
+                <h1 class="section-title">Meie Meeskond</h1>
+                <div class="team-grid">
+                    <div class="team-card">
+                        <div class="team-photo">
+                            <img src="/assets/images/team/kevin-placeholder.svg" alt="Kevin Laig">
+                        </div>
+                        <h3 class="team-name">Kevin Laig</h3>
+                        <p class="team-role">Arendaja & Projektijuht</p>
+                        <p class="team-specialization">Spetsialiseerumine: Backend arendus, JavaFX, turvalisuse simuleerimine</p>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-photo">
+                            <img src="/assets/images/team/kaili-placeholder.svg" alt="Kaili Must">
+                        </div>
+                        <h3 class="team-name">Kaili Must</h3>
+                        <p class="team-role">UI/UX Disainer & Arendaja</p>
+                        <p class="team-specialization">Spetsialiseerumine: Kasutajaliidese disain, frontend arendus, kasutajakogemus</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Timeline -->
+        <section class="timeline-section">
+            <div class="container">
+                <h2 class="section-title">Projekti Lugu</h2>
+                <div class="timeline">
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-icon">1</div>
+                            <h3>Algus: "Kui raske see ikka olla saab?"</h3>
+                            <p>September 2023. Tahtsime luua lihtsa küberturvalisuse mängu. "Max nädal või kaks," arvasime. Spoiler: me eksisime.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-icon">2</div>
+                            <h3>JavaFX: Armastus esimesest vihkamisest</h3>
+                            <p>"Kasutame JavaFX-i!" ütles keegi. Tagantjärele mõeldes oleks pidanud sel hetkel ruumist välja jooksma. Aga ei, meie olime julged. Või rumalad. Vahe on hämar.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-icon">3</div>
+                            <h3>Oktoober: "See peaks töötama... aga ei tööta"</h3>
+                            <p>Avastasime, et JavaFX-il on oma arvamus kõigest. Layout? JavaFX teab paremini. CSS? JavaFX naerab su ürituste üle. Thread safety? JavaFX: "Mis see on?"</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item right">
+                        <div class="timeline-content">
+                            <div class="timeline-icon">4</div>
+                            <h3>Detsember: "IT'S ALIVE!"</h3>
+                            <p>Simulaator töötab! Jah, UI näeb välja nagu 2008. aasta nostalgia, aga HEI - vähemalt ei crashi iga 5 minuti tagant. See on progress!</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item left">
+                        <div class="timeline-content">
+                            <div class="timeline-icon">5</div>
+                            <h3>2025: "Turundus vs Reaalsus"</h3>
+                            <p>Lõime ilusa veebilehe koos poleeritud screenshot`idega. Keegi ei pea ju teadma, et päris app näeb välja nagu Windows 95 ja Mac OS X-i armastamatu järeltulija, eks?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fun Facts -->
+        <section class="fun-facts">
+            <div class="container">
+                <h2 class="section-title">Lõbusad Faktid</h2>
+                <div class="facts-grid">
+                    <div class="fact-card">
+                        <span class="fact-number">∞</span>
+                        <p>Kohvitasse joodud</p>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-number">42</span>
+                        <p>JavaFX "iseärasust" avastatud</p>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-number">1337</span>
+                        <p>Rida koodi kirjutatud</p>
+                    </div>
+                    <div class="fact-card">
+                        <span class="fact-number">0</span>
+                        <p>Päris viiruseid loodud</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 KyberSim™. Kõik õigused kaitstud.*</p>
+            <p class="footer-disclaimer">*Tegelikult pole midagi kaitstud, see on avatud lähtekoodiga projekt</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/animations.js"></script>
+    <script src="/assets/js/analytics.js"></script>
+</body>
+</html>

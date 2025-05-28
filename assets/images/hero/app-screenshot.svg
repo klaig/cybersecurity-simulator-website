@@ -1,0 +1,64 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Window Frame -->
+  <rect x="0" y="0" width="800" height="600" fill="#f8fafc" stroke="#e5e7eb" stroke-width="2" rx="8"/>
+  
+  <!-- Title Bar -->
+  <rect x="0" y="0" width="800" height="40" fill="#00a86b" rx="8"/>
+  <rect x="0" y="30" width="800" height="10" fill="#00a86b"/>
+  
+  <!-- Window Controls -->
+  <circle cx="20" cy="20" r="6" fill="#ef4444"/>
+  <circle cx="40" cy="20" r="6" fill="#f59e0b"/>
+  <circle cx="60" cy="20" r="6" fill="#10b981"/>
+  
+  <!-- Title -->
+  <text x="400" y="26" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="white">KyberSim™ - Küberturvalisuse Simulaator</text>
+  
+  <!-- Navigation Menu -->
+  <rect x="30" y="60" width="740" height="60" fill="#f1f5f9" rx="4"/>
+  <text x="50" y="95" font-family="Inter, sans-serif" font-size="16" font-weight="500" fill="#0f172a">🏠 Peamenüü</text>
+  <text x="200" y="95" font-family="Inter, sans-serif" font-size="16" font-weight="500" fill="#0f172a">📚 Õppematerjalid</text>
+  <text x="380" y="95" font-family="Inter, sans-serif" font-size="16" font-weight="500" fill="#0f172a">🎮 Stsenaariumid</text>
+  <text x="560" y="95" font-family="Inter, sans-serif" font-size="16" font-weight="500" fill="#0f172a">📊 Statistika</text>
+  
+  <!-- Main Content Area -->
+  <rect x="30" y="140" width="350" height="200" fill="white" stroke="#e5e7eb" stroke-width="1" rx="4"/>
+  <text x="205" y="170" text-anchor="middle" font-family="Inter, sans-serif" font-size="18" font-weight="600" fill="#0f172a">Tere tulemast, Kasutaja!</text>
+  <text x="205" y="200" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" fill="#64748b">Sinu turvalisuse tase: 73%</text>
+  
+  <!-- Progress Bar -->
+  <rect x="80" y="220" width="250" height="20" fill="#e5e7eb" rx="10"/>
+  <rect x="80" y="220" width="182" height="20" fill="#00a86b" rx="10"/>
+  
+  <!-- Stats -->
+  <rect x="80" y="260" width="250" height="60" fill="#f8fafc" rx="4"/>
+  <text x="205" y="285" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Läbitud stsenaariumeid: 17/50</text>
+  <text x="205" y="305" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#64748b">Parim skoor: 89%</text>
+  
+  <!-- Category Grid -->
+  <rect x="420" y="140" width="150" height="150" fill="#00a86b" stroke="#007349" stroke-width="1" rx="4"/>
+  <text x="495" y="200" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" fill="white">🎣</text>
+  <text x="495" y="250" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="white">PHISHING</text>
+  
+  <rect x="590" y="140" width="150" height="150" fill="#f59e0b" stroke="#d97706" stroke-width="1" rx="4"/>
+  <text x="665" y="200" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" fill="white">🔑</text>
+  <text x="665" y="250" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="white">PAROOLID</text>
+  
+  <rect x="420" y="310" width="150" height="150" fill="#3b82f6" stroke="#2563eb" stroke-width="1" rx="4"/>
+  <text x="495" y="370" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" fill="white">🔒</text>
+  <text x="495" y="420" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="white">KRÜPTEERIMINE</text>
+  
+  <rect x="590" y="310" width="150" height="150" fill="#ef4444" stroke="#dc2626" stroke-width="1" rx="4"/>
+  <text x="665" y="370" text-anchor="middle" font-family="Inter, sans-serif" font-size="40" fill="white">🦠</text>
+  <text x="665" y="420" text-anchor="middle" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="white">MALWARE</text>
+  
+  <!-- Action Button -->
+  <rect x="30" y="360" width="350" height="100" fill="white" stroke="#e5e7eb" stroke-width="1" rx="4"/>
+  <rect x="115" y="395" width="180" height="40" fill="#00a86b" rx="20"/>
+  <text x="205" y="420" text-anchor="middle" font-family="Inter, sans-serif" font-size="16" font-weight="600" fill="white">ALUSTA ÕPPIMIST</text>
+  
+  <!-- Footer -->
+  <rect x="30" y="490" width="740" height="80" fill="#f1f5f9" rx="4"/>
+  <text x="400" y="520" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#64748b">💡 Vihje: Ära kunagi kliki kahtlastele linkidele!</text>
+  <text x="400" y="545" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#94a3b8">v2.0 "CSS Warrior" | © 2024 KyberSim™</text>
+</svg>
